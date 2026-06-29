@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:linkedin.com)",
+      "Bash(mkdir -p /Users/arsalabid/Desktop/portfolio/assets/css /Users/arsalabid/Desktop/portfolio/assets/js /Users/arsalabid/Desktop/portfolio/assets/images && echo \"Directories created\")",
+      "Bash(open /Users/arsalabid/Desktop/portfolio/index.html)",
+      "Bash(git init *)",
+      "Bash(git branch *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ],
+    "additionalDirectories": [
+      "/Users/arsalabid/Desktop/portfolio/assets"
+    ]
+  }
+}

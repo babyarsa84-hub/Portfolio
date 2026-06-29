@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arsalan Fareed Abid | Cyber Security Graduate</title>
+  <meta name="description" content="Arsalan Fareed Abid — Final-year BSc Cyber Security student at Birmingham City University (Predicted First Class), with experience at JLR, Amazon, FedEx &amp; Ocado. Seeking graduate roles in SOC, Network Security, and Cloud Security." />
+  <meta name="keywords" content="Cyber Security, SOC Analyst, Network Security, Ethical Hacking, Graduate, Security Engineer" />
+  <meta property="og:title" content="Arsalan Fareed Abid | Cyber Security Graduate" />
+  <meta property="og:description" content="Final-year Cyber Security student ready to begin a career protecting digital assets." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (SVG inline) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23050b14'/><text x='50' y='68' font-family='monospace' font-size='42' font-weight='900' fill='%2300d4ff' text-anchor='middle'>A</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ======================================
+       NAVIGATION
+  ======================================= -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__container">
+      <a href="#home" class="nav__logo" aria-label="Home">
+        <span class="nav__logo-bracket">&lt;</span><span class="nav__logo-name">AFA</span><span class="nav__logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="#about"          class="nav__link">About</a></li>
+        <li><a href="#skills"         class="nav__link">Skills</a></li>
+        <li><a href="#experience"     class="nav__link">Experience</a></li>
+        <li><a href="#education"      class="nav__link">Education</a></li>
+        <li><a href="#certifications" class="nav__link">Certifications</a></li>
+        <li><a href="#projects"       class="nav__link">Projects</a></li>
+        <li><a href="#contact"        class="nav__link">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn--outline btn--sm nav__cta">
+        <i class="fas fa-envelope" aria-hidden="true"></i> Hire Me
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================================
+       HERO
+  ======================================= -->
+  <section class="hero" id="home" aria-label="Introduction">
+    <canvas class="hero__canvas" id="particleCanvas" aria-hidden="true"></canvas>
+    <div class="hero__grid-overlay" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="hero__badge-dot" aria-hidden="true"></span>
+        Available for Graduate Opportunities
+      </div>
+
+      <div class="hero__terminal" aria-hidden="true">
+        <span class="hero__terminal-comment">// bsc cyber security @ bcu &bull; predicted first class</span>
+      </div>
+
+      <h1 class="hero__name">
+        Arsalan<br />
+        <span class="hero__name-accent">Fareed Abid</span>
+      </h1>
+
+      <div class="hero__subtitle" aria-live="polite">
+        <span class="hero__subtitle-prefix" aria-hidden="true">›</span>
+        <span class="hero__typing" id="typingText" aria-label="Role description"></span>
+        <span class="hero__cursor" aria-hidden="true">|</span>
+      </div>
+
+      <p class="hero__description">
+        Final-year BSc Cyber Security student at Birmingham City University (Predicted First Class),
+        with an engineering foundation, hands-on industry experience at JLR, Amazon &amp; more,
+        and a security-first mindset. Ready to protect, defend, and secure.
+      </p>
+
+      <div class="hero__cta">
+        <a href="#about" class="btn btn--primary">
+          <i class="fas fa-shield-halved" aria-hidden="true"></i> About Me
+        </a>
+        <a href="#contact" class="btn btn--outline">
+          <i class="fas fa-envelope" aria-hidden="true"></i> Get In Touch
+        </a>
+      </div>
+
+      <div class="hero__socials">
+        <a href="https://linkedin.com/in/arsalan-fareed-abid-a9275a250" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="LinkedIn Profile">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:babyarsa84@gmail.com" class="hero__social-link" aria-label="Email Me">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="hero__scroll-text">Scroll</span>
+      <div class="hero__scroll-indicator">
+        <div class="hero__scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       STATS BAR
+  ======================================= -->
+  <section class="stats" aria-label="Key statistics">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stats__item">
+          <span class="stats__number" data-target="6" aria-label="6 plus">0</span>
+          <span class="stats__label">Industry<br>Employers</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number" data-target="2" aria-label="2">0</span>
+          <span class="stats__label">Cisco CCNA<br>Certifications</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number" data-target="12" aria-label="12 plus">0</span>
+          <span class="stats__label">Degree<br>Modules</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number" data-target="20" aria-label="20 plus">0</span>
+          <span class="stats__label">Technical<br>Skills</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       ABOUT
+  ======================================= -->
+  <section class="section about" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Get to know me</span>
+        <h2 class="section__title" id="about-title">About <span class="text-accent">Me</span></h2>
+      </div>
+
+      <div class="about__grid">
+        <!-- Image / Avatar -->
+        <div class="about__image-wrap reveal">
+          <div class="about__image-container">
+                <div class="about__image-placeholder" aria-hidden="true">
+              <span class="about__image-initials">AFA</span>
+            </div>
+            <div class="about__image-glow" aria-hidden="true"></div>
+          </div>
+          <div class="about__status-card">
+            <div class="about__status-dot" aria-hidden="true"></div>
+            <span>Open to Opportunities</span>
+          </div>
+        </div>
+
+        <!-- Bio -->
+        <div class="about__content reveal">
+          <p class="about__text">
+            I'm a driven <strong>final-year BSc Cyber Security student at Birmingham City University</strong>,
+            on track for a <strong>Predicted First Class Honours</strong>. My technical foundation
+            began with a <strong>BTEC Level 3 Extended Diploma in Engineering (DMM)</strong> at
+            Aston University Engineering Academy — sharpening the analytical thinking, attention to
+            detail, and systems-level understanding that I now apply directly to cyber security challenges.
+          </p>
+          <p class="about__text">
+            Beyond the classroom, I've built real-world professional experience at
+            <strong>Jaguar Land Rover, Amazon, FedEx, Ocado</strong>, and as a
+            <strong>licensed Security Officer</strong> — giving me first-hand insight into how
+            large organisations operate, the threats they face, and why protecting systems and
+            data is mission-critical. I'm also currently contributing as an
+            <strong>AI Trainer at Outlier</strong>, evaluating complex AI outputs for logical flaws
+            and vulnerabilities.
+          </p>
+          <p class="about__text">
+            I'm actively seeking graduate roles in <strong>Cyber Security, SOC Analysis,
+            Network Security, Cloud Security, or IT Support</strong> where I can immediately
+            contribute with a security-first mindset, a strong work ethic, and a genuine passion
+            for continuous learning.
+          </p>
+
+          <div class="about__traits" role="list" aria-label="Personal qualities">
+            <div class="about__trait" role="listitem"><i class="fas fa-brain" aria-hidden="true"></i> Analytical</div>
+            <div class="about__trait" role="listitem"><i class="fas fa-shield-halved" aria-hidden="true"></i> Security Mindset</div>
+            <div class="about__trait" role="listitem"><i class="fas fa-bolt" aria-hidden="true"></i> Fast Learner</div>
+            <div class="about__trait" role="listitem"><i class="fas fa-users" aria-hidden="true"></i> Team Player</div>
+            <div class="about__trait" role="listitem"><i class="fas fa-magnifying-glass" aria-hidden="true"></i> Problem Solver</div>
+            <div class="about__trait" role="listitem"><i class="fas fa-arrows-rotate" aria-hidden="true"></i> Adaptable</div>
+            <div class="about__trait" role="listitem"><i class="fas fa-industry" aria-hidden="true"></i> Engineering Background</div>
+            <div class="about__trait" role="listitem"><i class="fas fa-briefcase" aria-hidden="true"></i> Practical Experience</div>
+          </div>
+
+          <div class="about__cta">
+            <a href="#contact" class="btn btn--primary">
+              <i class="fas fa-envelope" aria-hidden="true"></i> Get In Touch
+            </a>
+            <a href="https://linkedin.com/in/arsalan-fareed-abid-a9275a250" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+              <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       SKILLS
+  ======================================= -->
+  <section class="section skills" id="skills" aria-labelledby="skills-title">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Technical Expertise</span>
+        <h2 class="section__title" id="skills-title">Skills &amp; <span class="text-accent">Capabilities</span></h2>
+      </div>
+
+      <div class="skills__categories">
+
+        <div class="skills__category reveal" aria-labelledby="skill-sec">
+          <div class="skills__category-header">
+            <div class="skills__category-icon" aria-hidden="true"><i class="fas fa-shield-virus"></i></div>
+            <h3 class="skills__category-title" id="skill-sec">Cyber Security</h3>
+          </div>
+          <div class="skills__tags" role="list" aria-label="Cyber security skills">
+            <span class="skill-tag skill-tag--primary" role="listitem">Network Security</span>
+            <span class="skill-tag skill-tag--primary" role="listitem">Ethical Hacking</span>
+            <span class="skill-tag skill-tag--primary" role="listitem">Penetration Testing</span>
+            <span class="skill-tag skill-tag--primary" role="listitem">Vulnerability Assessment</span>
+            <span class="skill-tag skill-tag--primary" role="listitem">Incident Response</span>
+            <span class="skill-tag skill-tag--primary" role="listitem">SOC Analysis</span>
+            <span class="skill-tag skill-tag--primary" role="listitem">SIEM</span>
+            <span class="skill-tag skill-tag--primary" role="listitem">Threat Intelligence</span>
+            <span class="skill-tag skill-tag--primary" role="listitem">OSINT</span>
+            <span class="skill-tag skill-tag--primary" role="listitem">Risk Assessment</span>
+          </div>
+        </div>
+
+        <div class="skills__category reveal" aria-labelledby="skill-net">
+          <div class="skills__category-header">
+            <div class="skills__category-icon" aria-hidden="true"><i class="fas fa-network-wired"></i></div>
+            <h3 class="skills__category-title" id="skill-net">Networking</h3>
+          </div>
+          <div class="skills__tags" role="list" aria-label="Networking skills">
+            <span class="skill-tag" role="listitem">TCP/IP</span>
+            <span class="skill-tag" role="listitem">DNS &amp; DHCP</span>
+            <span class="skill-tag" role="listitem">Firewalls</span>
+            <span class="skill-tag" role="listitem">VPN</span>
+            <span class="skill-tag" role="listitem">Routing &amp; Switching</span>
+            <span class="skill-tag" role="listitem">Packet Analysis</span>
+            <span class="skill-tag" role="listitem">IDS / IPS</span>
+            <span class="skill-tag" role="listitem">Wireshark</span>
+          </div>
+        </div>
+
+        <div class="skills__category reveal" aria-labelledby="skill-tools">
+          <div class="skills__category-header">
+            <div class="skills__category-icon" aria-hidden="true"><i class="fas fa-screwdriver-wrench"></i></div>
+            <h3 class="skills__category-title" id="skill-tools">Security Tools</h3>
+          </div>
+          <div class="skills__tags" role="list" aria-label="Security tools">
+            <span class="skill-tag" role="listitem">Kali Linux</span>
+            <span class="skill-tag" role="listitem">Nmap</span>
+            <span class="skill-tag" role="listitem">Metasploit</span>
+            <span class="skill-tag" role="listitem">Burp Suite</span>
+            <span class="skill-tag" role="listitem">Nessus</span>
+            <span class="skill-tag" role="listitem">John the Ripper</span>
+            <span class="skill-tag" role="listitem">Hashcat</span>
+            <span class="skill-tag" role="listitem">Aircrack-ng</span>
+            <span class="skill-tag" role="listitem">Cisco Packet Tracer</span>
+          </div>
+        </div>
+
+        <div class="skills__category reveal" aria-labelledby="skill-os">
+          <div class="skills__category-header">
+            <div class="skills__category-icon" aria-hidden="true"><i class="fab fa-linux"></i></div>
+            <h3 class="skills__category-title" id="skill-os">Operating Systems</h3>
+          </div>
+          <div class="skills__tags" role="list" aria-label="Operating systems">
+            <span class="skill-tag" role="listitem">Linux (Ubuntu / Kali)</span>
+            <span class="skill-tag" role="listitem">Windows 10 / 11</span>
+            <span class="skill-tag" role="listitem">Windows Server</span>
+            <span class="skill-tag" role="listitem">Active Directory</span>
+            <span class="skill-tag" role="listitem">macOS</span>
+          </div>
+        </div>
+
+        <div class="skills__category reveal" aria-labelledby="skill-code">
+          <div class="skills__category-header">
+            <div class="skills__category-icon" aria-hidden="true"><i class="fas fa-code"></i></div>
+            <h3 class="skills__category-title" id="skill-code">Programming &amp; Scripting</h3>
+          </div>
+          <div class="skills__tags" role="list" aria-label="Programming skills">
+            <span class="skill-tag" role="listitem">Python</span>
+            <span class="skill-tag" role="listitem">Bash / Shell</span>
+            <span class="skill-tag" role="listitem">PowerShell</span>
+            <span class="skill-tag" role="listitem">SQL</span>
+            <span class="skill-tag" role="listitem">HTML &amp; CSS</span>
+          </div>
+        </div>
+
+        <div class="skills__category reveal" aria-labelledby="skill-cloud">
+          <div class="skills__category-header">
+            <div class="skills__category-icon" aria-hidden="true"><i class="fas fa-cloud"></i></div>
+            <h3 class="skills__category-title" id="skill-cloud">Cloud &amp; Infrastructure</h3>
+          </div>
+          <div class="skills__tags" role="list" aria-label="Cloud skills">
+            <span class="skill-tag" role="listitem">AWS Fundamentals</span>
+            <span class="skill-tag" role="listitem">Microsoft Azure</span>
+            <span class="skill-tag" role="listitem">Cloud Security</span>
+            <span class="skill-tag" role="listitem">Virtualisation</span>
+            <span class="skill-tag" role="listitem">VMware</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       EXPERIENCE
+  ======================================= -->
+  <section class="section experience" id="experience" aria-labelledby="experience-title">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Professional Background</span>
+        <h2 class="section__title" id="experience-title">Work <span class="text-accent">Experience</span></h2>
+      </div>
+
+      <div class="timeline" role="list">
+
+        <!-- Outlier — AI Trainer (Current) -->
+        <article class="timeline__item reveal" role="listitem">
+          <div class="timeline__marker" aria-hidden="true">
+            <div class="timeline__marker-dot"></div>
+            <div class="timeline__marker-line"></div>
+          </div>
+          <div class="timeline__card">
+            <div class="timeline__card-header">
+              <div>
+                <h3 class="timeline__title">AI Trainer</h3>
+                <span class="timeline__company">Outlier &mdash; <span class="timeline__location">Remote (Freelance)</span></span>
+              </div>
+              <div class="timeline__meta">
+                <span class="timeline__badge">Current</span>
+                <span class="timeline__date">Nov 2025 &ndash; Present</span>
+              </div>
+            </div>
+            <ul class="timeline__list">
+              <li>Contributed as a subject matter expert in developing advanced Generative AI models on the Outlier platform, ensuring outputs meet high standards of accuracy and safety.</li>
+              <li>Critically assessed complex AI outputs for logical flaws, reasoning errors, and vulnerabilities — applying a structured, security-aware analytical mindset.</li>
+              <li>Delivered detailed, actionable feedback to improve model performance, demonstrating strong written communication and precision under tight deadlines.</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="timeline__tag">AI Evaluation</span>
+              <span class="timeline__tag">Critical Analysis</span>
+              <span class="timeline__tag">Logical Reasoning</span>
+              <span class="timeline__tag">Remote Working</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Security Officer -->
+        <article class="timeline__item reveal" role="listitem">
+          <div class="timeline__marker" aria-hidden="true">
+            <div class="timeline__marker-dot"></div>
+            <div class="timeline__marker-line"></div>
+          </div>
+          <div class="timeline__card">
+            <div class="timeline__card-header">
+              <div>
+                <h3 class="timeline__title">Security Officer (SIA Licensed)</h3>
+                <span class="timeline__company">HS2 (High Speed Two Ltd) &mdash; <span class="timeline__location">Birmingham</span></span>
+              </div>
+              <div class="timeline__meta">
+                <span class="timeline__badge">Security</span>
+              </div>
+            </div>
+            <ul class="timeline__list">
+              <li>Provided SIA-licensed security services across HS2 construction sites and premises, managing access control points and ensuring only authorised personnel entered restricted areas.</li>
+              <li>Monitored CCTV systems and conducted regular site patrols, identifying and escalating suspicious activity in line with HS2 security procedures and compliance standards.</li>
+              <li>Documented incidents accurately and liaised with site managers and emergency services as required, maintaining a safe and professional environment at all times.</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="timeline__tag">SIA Licence</span>
+              <span class="timeline__tag">CCTV Monitoring</span>
+              <span class="timeline__tag">Access Control</span>
+              <span class="timeline__tag">Incident Response</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Jaguar Land Rover — Manufacturing -->
+        <article class="timeline__item reveal" role="listitem">
+          <div class="timeline__marker" aria-hidden="true">
+            <div class="timeline__marker-dot"></div>
+            <div class="timeline__marker-line"></div>
+          </div>
+          <div class="timeline__card">
+            <div class="timeline__card-header">
+              <div>
+                <h3 class="timeline__title">Warehouse Operative</h3>
+                <span class="timeline__company">Jaguar Land Rover &mdash; <span class="timeline__location">Birmingham</span></span>
+              </div>
+              <div class="timeline__meta">
+                <span class="timeline__badge timeline__badge--purple">Manufacturing</span>
+              </div>
+            </div>
+            <ul class="timeline__list">
+              <li>Managed the storage, picking, and dispatch of high-value automotive components within Jaguar Land Rover's warehouse facility, maintaining strict inventory accuracy and stock integrity.</li>
+              <li>Operated warehouse management systems and handheld scanning equipment to track stock movements and fulfil orders to precise production line schedules.</li>
+              <li>Adhered to rigorous health and safety standards within a world-class automotive manufacturing environment, consistently meeting quality and efficiency targets as part of a high-performing team.</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="timeline__tag">Automotive Manufacturing</span>
+              <span class="timeline__tag">Quality Control</span>
+              <span class="timeline__tag">Health &amp; Safety</span>
+              <span class="timeline__tag">Teamwork</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Amazon / FedEx / Ocado — Logistics & Warehouse -->
+        <article class="timeline__item reveal" role="listitem">
+          <div class="timeline__marker" aria-hidden="true">
+            <div class="timeline__marker-dot"></div>
+          </div>
+          <div class="timeline__card">
+            <div class="timeline__card-header">
+              <div>
+                <h3 class="timeline__title">Delivery Driver</h3>
+                <span class="timeline__company">Amazon &middot; FedEx &middot; Ocado &mdash; <span class="timeline__location">Birmingham</span></span>
+              </div>
+              <div class="timeline__meta">
+                <span class="timeline__badge timeline__badge--green">Logistics</span>
+              </div>
+            </div>
+            <ul class="timeline__list">
+              <li>Planned and executed multi-stop delivery routes efficiently across designated areas for Amazon, FedEx, and Ocado, consistently meeting same-day and next-day delivery targets.</li>
+              <li>Maintained accurate parcel records using handheld scanning devices, ensuring full chain-of-custody tracking and zero discrepancies across all consignments.</li>
+              <li>Delivered a professional and reliable service to customers daily, demonstrating strong time management, problem-solving, and communication skills under pressure.</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="timeline__tag">Logistics</span>
+              <span class="timeline__tag">Warehouse Operations</span>
+              <span class="timeline__tag">Time Management</span>
+              <span class="timeline__tag">Attention to Detail</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       EDUCATION
+  ======================================= -->
+  <section class="section education" id="education" aria-labelledby="education-title">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Academic Background</span>
+        <h2 class="section__title" id="education-title">Education &amp; <span class="text-accent">Training</span></h2>
+      </div>
+
+      <div class="education__grid">
+
+        <article class="education__card reveal">
+          <div class="education__card-top-bar" aria-hidden="true"></div>
+          <div class="education__card-icon" aria-hidden="true">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="education__card-content">
+            <span class="education__degree-tag education__degree-tag--current">In Progress</span>
+            <h3 class="education__degree">BSc (Hons) Cyber Security</h3>
+            <span class="education__institution"><i class="fas fa-university" aria-hidden="true"></i> Birmingham City University</span>
+            <span class="education__dates"><i class="fas fa-calendar" aria-hidden="true"></i> Sep 2024 &ndash; May 2027</span>
+            <p class="education__description">
+              Three-year honours degree with a <strong>Predicted First Class</strong> award. Year 1 completed
+              with First Class results across all modules. Currently in Year 2, building advanced skills in
+              offensive and defensive security, cryptography, forensics, and networking technologies.
+              Year 3 will focus on Cloud Computing, Ethical Hacking, Applied AI for Cyber Security,
+              and an Individual Honours Project.
+            </p>
+            <div class="education__highlights">
+              <span class="education__highlight education__highlight--gold"><i class="fas fa-star" aria-hidden="true"></i> Predicted First Class</span>
+              <span class="education__highlight"><i class="fas fa-check" aria-hidden="true"></i> Cyber Security Operations</span>
+              <span class="education__highlight"><i class="fas fa-check" aria-hidden="true"></i> Ethical Hacking</span>
+              <span class="education__highlight"><i class="fas fa-check" aria-hidden="true"></i> Applied Cryptography</span>
+              <span class="education__highlight"><i class="fas fa-check" aria-hidden="true"></i> Applied Cyber Forensics</span>
+              <span class="education__highlight"><i class="fas fa-check" aria-hidden="true"></i> Network Fundamentals</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="education__card reveal">
+          <div class="education__card-top-bar education__card-top-bar--secondary" aria-hidden="true"></div>
+          <div class="education__card-icon education__card-icon--secondary" aria-hidden="true">
+            <i class="fas fa-cog"></i>
+          </div>
+          <div class="education__card-content">
+            <span class="education__degree-tag education__degree-tag--completed">Completed</span>
+            <h3 class="education__degree">BTEC Level 3 Extended Diploma in Engineering</h3>
+            <span class="education__institution"><i class="fas fa-university" aria-hidden="true"></i> Aston University Engineering Academy</span>
+            <span class="education__dates"><i class="fas fa-calendar" aria-hidden="true"></i> 2020 &ndash; 2022</span>
+            <p class="education__description">
+              Achieved a <strong>DMM (Distinction, Merit, Merit)</strong> grade. Developed a rigorous
+              foundation in mechanical and electrical engineering, CAD, manufacturing processes, and
+              applied mathematics — competencies that sharpen a systems-level understanding directly
+              transferable to identifying vulnerabilities and securing complex infrastructures.
+            </p>
+            <div class="education__highlights">
+              <span class="education__highlight education__highlight--gold"><i class="fas fa-star" aria-hidden="true"></i> Grade: DMM</span>
+              <span class="education__highlight"><i class="fas fa-check" aria-hidden="true"></i> Systems Thinking</span>
+              <span class="education__highlight"><i class="fas fa-check" aria-hidden="true"></i> Technical Analysis</span>
+              <span class="education__highlight"><i class="fas fa-check" aria-hidden="true"></i> Problem Solving</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       CERTIFICATIONS
+  ======================================= -->
+  <section class="section certifications" id="certifications" aria-labelledby="certs-title">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Professional Development</span>
+        <h2 class="section__title" id="certs-title">Licences &amp; <span class="text-accent">Certifications</span></h2>
+        <p class="section__subtitle">
+          Formal credentials and professional certifications earned alongside my degree studies.
+        </p>
+      </div>
+
+      <div class="certs__grid certs__grid--centered">
+
+        <article class="cert-card reveal">
+          <div class="cert-card__icon" aria-hidden="true">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <div class="cert-card__content">
+            <h3 class="cert-card__title">CCNA 1 — Introduction to Networks</h3>
+            <span class="cert-card__issuer">Cisco Networking Academy</span>
+          </div>
+          <div class="cert-card__verified" aria-label="Verified certificate">
+            <i class="fas fa-certificate" aria-hidden="true"></i>
+          </div>
+        </article>
+
+        <article class="cert-card reveal">
+          <div class="cert-card__icon" aria-hidden="true">
+            <i class="fas fa-route"></i>
+          </div>
+          <div class="cert-card__content">
+            <h3 class="cert-card__title">CCNA 2 — Switching, Routing &amp; Wireless Essentials</h3>
+            <span class="cert-card__issuer">Cisco Networking Academy</span>
+          </div>
+          <div class="cert-card__verified" aria-label="Verified certificate">
+            <i class="fas fa-certificate" aria-hidden="true"></i>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       PROJECTS
+  ======================================= -->
+  <section class="section projects" id="projects" aria-labelledby="projects-title">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Practical Application</span>
+        <h2 class="section__title" id="projects-title">Featured <span class="text-accent">Projects</span></h2>
+        <p class="section__subtitle">
+          Academic and personal security projects demonstrating hands-on technical ability.
+        </p>
+      </div>
+
+      <div class="projects__grid projects__grid--centered">
+
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <div class="project-card__icon" aria-hidden="true">
+              <i class="fas fa-hospital"></i>
+            </div>
+          </div>
+          <h3 class="project-card__title">Hospital Management System</h3>
+          <p class="project-card__description">
+            A full-featured management system designed to digitalise and streamline core hospital
+            operations including patient registration, appointment scheduling, staff management, and
+            record keeping. Built with a focus on data integrity, access control, and secure handling
+            of sensitive patient information — applying fundamental information security principles
+            throughout the design and implementation.
+          </p>
+          <div class="project-card__tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">SQL</span>
+            <span class="project-tag">Data Management</span>
+            <span class="project-tag">Access Control</span>
+            <span class="project-tag">System Design</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <div class="project-card__icon" aria-hidden="true">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+          </div>
+          <h3 class="project-card__title">Cyber Security Portfolio Website</h3>
+          <p class="project-card__description">
+            This portfolio website — designed and built from scratch as a production-ready personal
+            branding project. Engineered with semantic HTML5, modular CSS with a custom design
+            system, and vanilla JavaScript featuring a particle canvas, scroll-reveal animations,
+            and a typing engine. Deployed as a static site with zero build-tool dependencies for
+            maximum portability and performance.
+          </p>
+          <div class="project-card__tags">
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Canvas API</span>
+            <span class="project-tag">Responsive Design</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       CONTACT
+  ======================================= -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Let&rsquo;s Connect</span>
+        <h2 class="section__title" id="contact-title">Get In <span class="text-accent">Touch</span></h2>
+        <p class="section__subtitle">
+          I&rsquo;m actively seeking graduate opportunities in Cyber Security. Whether you have a role,
+          want to collaborate, or simply want to connect &mdash; I&rsquo;d love to hear from you.
+        </p>
+      </div>
+
+      <div class="contact__grid">
+        <!-- Contact Info -->
+        <div class="contact__info reveal">
+          <a href="mailto:babyarsa84@gmail.com" class="contact__info-item contact__info-item--link">
+            <div class="contact__info-icon" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+            <div class="contact__info-content">
+              <span class="contact__info-label">Email</span>
+              <span class="contact__info-value">babyarsa84@gmail.com</span>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square contact__info-arrow" aria-hidden="true"></i>
+          </a>
+
+          <a href="https://linkedin.com/in/arsalan-fareed-abid-a9275a250" target="_blank" rel="noopener noreferrer" class="contact__info-item contact__info-item--link">
+            <div class="contact__info-icon" aria-hidden="true"><i class="fab fa-linkedin"></i></div>
+            <div class="contact__info-content">
+              <span class="contact__info-label">LinkedIn</span>
+              <span class="contact__info-value">arsalan-fareed-abid</span>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square contact__info-arrow" aria-hidden="true"></i>
+          </a>
+
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true"><i class="fas fa-location-dot"></i></div>
+            <div class="contact__info-content">
+              <span class="contact__info-label">Location</span>
+              <span class="contact__info-value">Birmingham, England, United Kingdom</span>
+            </div>
+          </div>
+
+          <div class="contact__availability">
+            <div class="contact__availability-dot" aria-hidden="true"></div>
+            <div>
+              <strong>Available for Immediate Start</strong>
+              <br />upon graduation &mdash; open to graduate schemes, SOC roles &amp; IT positions
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name" class="form__label">Your Name</label>
+              <input type="text" id="name" name="name" class="form__input" placeholder="Jane Smith" required autocomplete="name" />
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Email Address</label>
+              <input type="email" id="email" name="email" class="form__input" placeholder="jane@company.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="subject" class="form__label">Subject</label>
+            <input type="text" id="subject" name="subject" class="form__input" placeholder="Graduate Cyber Security Opportunity" required />
+          </div>
+          <div class="form__group">
+            <label for="message" class="form__label">Message</label>
+            <textarea id="message" name="message" class="form__textarea" placeholder="Tell me about the opportunity or how I can help…" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+            <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+          </button>
+          <p class="form__note" id="formNote" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       FOOTER
+  ======================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__content">
+        <a href="#home" class="footer__logo" aria-label="Back to top">
+          <span class="footer__logo-bracket">&lt;</span><span class="footer__logo-name">AFA</span><span class="footer__logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer__tagline">BSc Cyber Security @ Birmingham City University &mdash; Predicted First Class</p>
+
+        <div class="footer__socials">
+          <a href="https://linkedin.com/in/arsalan-fareed-abid-a9275a250" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="LinkedIn">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:babyarsa84@gmail.com" class="footer__social" aria-label="Email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <p class="footer__copy">
+          &copy; 2026 Arsalan Fareed Abid. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
