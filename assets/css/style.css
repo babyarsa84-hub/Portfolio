@@ -153,32 +153,6 @@ button  { font-family: inherit; cursor: pointer; }
 .btn--sm   { padding: 9px 22px; font-size: 0.85rem; }
 .btn--full { width: 100%; justify-content: center; }
 
-.btn--cv-download {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  margin: 18px auto 0;
-  padding: 12px 28px;
-  border-radius: var(--r-full);
-  font-family: var(--font-sans);
-  font-size: 0.92rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  cursor: pointer;
-  white-space: nowrap;
-  text-decoration: none;
-  color: #030a04;
-  background: linear-gradient(135deg, var(--clr-primary), #00b85c);
-  border: 2px solid var(--clr-primary);
-  box-shadow: 0 0 24px var(--clr-primary-dim);
-  transition: transform var(--t-normal), box-shadow var(--t-normal);
-}
-.btn--cv-download:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 48px var(--clr-primary-glow), 0 10px 24px rgba(0,0,0,0.4);
-}
-.btn--cv-download:active { transform: translateY(-1px); }
-
 /* ============================================================
    5. SECTION COMMON
    ============================================================ */
@@ -294,7 +268,14 @@ button  { font-family: inherit; cursor: pointer; }
   background: var(--clr-primary-dim);
 }
 
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
 .nav__cta { flex-shrink: 0; }
+.nav__cv  { flex-shrink: 0; }
 
 .nav__toggle {
   display: none;
@@ -1520,7 +1501,7 @@ button  { font-family: inherit; cursor: pointer; }
   .section { padding: 76px 0; }
 
   /* Nav mobile */
-  .nav__cta { display: none; }
+  .nav__actions { display: none; }
   .nav__toggle { display: flex; }
 
   .nav__links {
