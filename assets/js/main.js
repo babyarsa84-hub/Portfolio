@@ -376,11 +376,11 @@
     if (submitBtn) {
       submitBtn.disabled = false;
       submitBtn.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i> Message Sent!';
-      submitBtn.style.background = 'linear-gradient(135deg, #06d6a0, #059669)';
-      submitBtn.style.borderColor = '#06d6a0';
+      submitBtn.style.background = 'linear-gradient(135deg, #00e676, #059669)';
+      submitBtn.style.borderColor = '#00e676';
     }
     if (note) {
-      note.style.color = '#06d6a0';
+      note.style.color = '#00e676';
       note.textContent = "Thanks — I'll get back to you as soon as possible.";
     }
     form.reset();
