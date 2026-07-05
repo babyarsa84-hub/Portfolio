@@ -907,10 +907,8 @@ button  { font-family: inherit; cursor: pointer; }
 
 .education__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .education__card {
@@ -941,6 +939,9 @@ button  { font-family: inherit; cursor: pointer; }
 .education__card-top-bar--secondary {
   background: linear-gradient(90deg, #39d353, var(--clr-primary));
 }
+.education__card-top-bar--gold {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
 
 .education__card-icon {
   width: 54px; height: 54px;
@@ -959,6 +960,11 @@ button  { font-family: inherit; cursor: pointer; }
   background: linear-gradient(135deg, var(--clr-purple-dim), rgba(124,58,237,0.04));
   border-color: rgba(124,58,237,0.2);
   color: #a78bfa;
+}
+.education__card-icon--gold {
+  background: linear-gradient(135deg, rgba(245,158,11,0.14), rgba(245,158,11,0.04));
+  border-color: rgba(245,158,11,0.25);
+  color: #f59e0b;
 }
 
 .education__degree-tag {
@@ -1475,6 +1481,8 @@ button  { font-family: inherit; cursor: pointer; }
 
   .skills__categories { grid-template-columns: repeat(2, 1fr); }
 
+  .education__grid { grid-template-columns: repeat(2, 1fr); }
+
   .certs__grid { grid-template-columns: repeat(2, 1fr); }
 
   .projects__grid { grid-template-columns: repeat(2, 1fr); }
@@ -1535,6 +1543,7 @@ button  { font-family: inherit; cursor: pointer; }
 
   /* Certifications */
   .certs__grid { grid-template-columns: 1fr; }
+  .certs__grid--centered { grid-template-columns: 1fr; }
 
   /* Projects */
   .projects__grid { grid-template-columns: 1fr; }
